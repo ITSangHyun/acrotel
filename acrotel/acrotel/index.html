@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="keywords" content=""/>
+<meta name="description" content="드라마틱한 풍광과 럭셔리한 휴식의 만남 - WYNDHAM in GANGWON GOSEONG">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ACROTEL 천안두정">
+<meta property="og:description" content="드라마틱한 풍광과 럭셔리한 휴식의 만남 - WYNDHAM in GANGWON GOSEONG">
+<meta property="og:image" content="404error.html">
+<meta property="og:url" content="index.html">
+
+<!--<link rel="stylesheet" type="text/css" href="/common/css/common.css?v=20211231071948"/>-->
+<link rel="stylesheet" type="text/css" href="common/css/font.css"/>
+<link rel="stylesheet" type="text/css" href="common/css/basef085.css?v=20211231071948"/>
+<link rel="stylesheet" type="text/css" href="common/css/layoutf085.css?v=20211231071948"/>
+<link rel="stylesheet" type="text/css" href="common/css/contentf085.css?v=20211231071948"/>
+<link rel="stylesheet" type="text/css" href="common/css/boardf085.css?v=20211231071948"/>
+<script type="text/javascript" src="common/js/jquery-1.11.1.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+<script type="text/javascript" src="common/js/commonf085.js?v=20211231071948"></script>
+<script type="text/javascript" src="common/js/script_top3860.js?v=1"></script>
+<meta name="naver-site-verification" content="28291699597803fe9e8d8edf40ea1bf286da22dd" /><!--모바일 체크 자바스크립트버전-->
+<script type="text/javascript">
+if (navigator.userAgent.match(/iPhone|iPod|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != null
+|| navigator.userAgent.match(/LG|SAMSUNG|Samsung/) != null)
+{
+	//html = "<meta http-equiv='refresh' content='0;url=/m'>";
+	//$("head").append(html);
+	//location.href = '/m';
+}
+jQuery(document).ready(function ($) {
+
+$('#checkbox').change(function(){
+  setInterval(function () {
+	  moveRight();
+  }, 3000);
+});
+
+  var slideCount = $('#slider ul li').length;
+  var slideWidth = $('#slider ul li').width();
+  var slideHeight = $('#slider ul li').height();
+  var sliderUlWidth = slideCount * slideWidth;
+  
+  $('#slider').css({ width: slideWidth, height: slideHeight });
+  
+  $('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+  
+  $('#slider ul li:last-child').prependTo('#slider ul');
+
+  function moveLeft() {
+	  $('#slider ul').animate({
+		  left: + slideWidth
+	  }, 200, function () {
+		  $('#slider ul li:last-child').prependTo('#slider ul');
+		  $('#slider ul').css('left', '');
+	  });
+  };
+
+  function moveRight() {
+	  $('#slider ul').animate({
+		  left: - slideWidth
+	  }, 200, function () {
+		  $('#slider ul li:first-child').appendTo('#slider ul');
+		  $('#slider ul').css('left', '');
+	  });
+  };
+
+  $('a.control_prev').click(function () {
+	  moveLeft();
+  });
+
+  $('a.control_next').click(function () {
+	  moveRight();
+  });
+//   slider2
+  var slideCount = $('#slider2 ul li').length;
+  var slideWidth = $('#slider2 ul li').width();
+  var slideHeight = $('#slider2 ul li').height();
+  var sliderUlWidth = slideCount * slideWidth;
+  
+  $('#slider2').css({ width: slideWidth, height: slideHeight });
+  
+  $('#slider2 ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+  
+  $('#slider2 ul li:last-child').prependTo('#slider2 ul');
+
+  function moveLeft() {
+	  $('#slider2 ul').animate({
+		  left: + slideWidth
+	  }, 200, function () {
+		  $('#slider2 ul li:last-child').prependTo('#slider2 ul');
+		  $('#slider2 ul').css('left', '');
+	  });
+  };
+
+  function moveRight() {
+	  $('#slider2 ul').animate({
+		  left: - slideWidth
+	  }, 200, function () {
+		  $('#slider2 ul li:first-child').appendTo('#slider2 ul');
+		  $('#slider2 ul').css('left', '');
+	  });
+  };
+
+  $('a.control_prev2').click(function () {
+	  moveLeft();
+  });
+
+  $('a.control_next2').click(function () {
+	  moveRight();
+  });
+
+//   slider3
+
+  var slideCount = $('#slider3 ul li').length;
+  var slideWidth = $('#slider3 ul li').width();
+  var slideHeight = $('#slider3 ul li').height();
+  var sliderUlWidth = slideCount * slideWidth;
+  
+  $('#slider3').css({ width: slideWidth, height: slideHeight });
+  
+  $('#slider3 ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+  
+  $('#slider3 ul li:last-child').prependTo('#slider3 ul');
+
+  function moveLeft() {
+	  $('#slider3 ul').animate({
+		  left: + slideWidth
+	  }, 200, function () {
+		  $('#slider3 ul li:last-child').prependTo('#slider3 ul');
+		  $('#slider3 ul').css('left', '');
+	  });
+  };
+
+  function moveRight() {
+	  $('#slider3 ul').animate({
+		  left: - slideWidth
+	  }, 200, function () {
+		  $('#slider3 ul li:first-child').appendTo('#slider3 ul');
+		  $('#slider3 ul').css('left', '');
+	  });
+  };
+
+  $('a.control_prev3').click(function () {
+	  moveLeft();
+  });
+
+  $('a.control_next3').click(function () {
+	  moveRight();
+  });
+});    
+
+</script>
+<!--모바일 체크 자바스크립트버전-->
+
+<title>ACROTEL 천안두정</title>
+
+<script type="text/javascript">
+var windowHeight = 0;
+$(document).ready(function() {
+	//bnn_balloon1();
+	//bnn_balloon1();
+	//ctrl_embed('play');
+
+	var windowHeight = 0;
+	$window = $(window);
+	var addHeight = 80;    
+		
+	$window.on('resize', function() {	_objectPositionTop();	});
+	$window.on('scroll', function() { _objectPositionChk(addHeight) });
+	$window.on('load', function() { _objectPositionChk(addHeight) });
+	_objectPositionTop();
+	//_onCf1();
+	
+	$(".pop1").find("img").each(function(index){
+		$(this).css({"opacity":"0","margin-bottom":parseInt($(this).css("margin-bottom"))-20});
+	});
+	
+	setTimeout(function(){
+		$(".pop1").find("img").each(function(index){
+			$(this).delay(100*index).animate({opacity:"1", marginBottom: parseInt($(this).css("margin-bottom"))+20  }, {
+				duration : 800
+				}
+			); 
+		})
+	},100)
+});	
+
+function _objectPositionTop() {
+	windowHeight = $window.height();
+	$('.is-animated').each(function() { 	$(this).data('offsetTop', ($(this).offset().top));	});
+}	
+
+function _objectPositionChk(addHeight){
+	var position = $window.scrollTop() + windowHeight - addHeight;	
+	$('.is-animated.ready').each(function() {		
+		if(!$(this).hasClass('active') && $(this).data('offsetTop') < position) {	
+		_isAnimate($(this));	
+		$(this).find(".is-animated.ready").each(function(index, element) {
+            _isAnimate($(element));
+        });			
+	}
+	});
+}
+
+function _isAnimate(obj) {
+	$(obj).addClass('animate__animated ' + $(obj).data('animation') + ' animate__delay-'+$(obj).data('delay') + ' animate__'+$(obj).data('duration') + ' active');
+	//console.log($(obj).attr("class"));
+	$(obj).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+		$(obj).removeClass('animated ' + $(obj).data('animation') + " ready");
+		//console.log('animated ' + el.data('animation'));
+	});
+}	
+
+//유튜브 영상
+function _onCf1(){
+	var top = Number($(window).scrollTop())+60+'px';
+	divFilter($(document.body), "dobox3", "A", 850, "dobox2");
+	inHtml	=	'\
+			<div id="layerDiv" class="cflayer1" style="top:'+top+'">\
+				<div class="top1">\
+				<a href="#close" onclick="$(\'#layerDiv\').remove();$(\'#dobox3\').remove(); return false;"><img src="/images/main/btn_close1.png" alt="닫기" class="cbtn1" /></a>\
+				</div>\
+				<div class="movieb1">\
+				<iframe src="https://www.youtube.com/embed/BEKMFJA_4pY?rel=0&autoplay=1&mute=1&showinfo=0&loop=1&time_continue=0" width="100%" height="100%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>\
+				</div>\
+			</div>\
+			'
+	$("#dobox3").append(inHtml);
+	
+}
+
+
+//최종 영상 안씀
+/*
+function _onCf1(){
+	var top = Number($(window).scrollTop())+60+'px';
+	divFilter($(document.body), "dobox3", "A", 850, "dobox2");
+	inHtml	=	'\
+			<div id="layerDiv" class="cflayer1" style="top:'+top+'">\
+				<div class="top1">\
+				<a href="#close" onclick="$(\'#layerDiv\').remove();$(\'#dobox3\').remove(); return false;"><img src="/images/main/btn_close1.png" alt="닫기" class="cbtn1" /></a>\
+				</div>\
+				<div class="movieb1">\
+				<iframe  src="https://player.vimeo.com/video/654001325?title=0&byline=0&portrait=0&autoplay=1&quality=1080p&h=654001325" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen"></iframe>\
+				</div>\
+			</div>\
+			'
+	$("#dobox3").append(inHtml);
+	
+}
+*/
+
+//쇼케이스 안씀
+function _onCf(){
+	var top = Number($(window).scrollTop())+60+'px';
+	divFilter($(document.body), "dobox1", "A", 850);
+	inHtml	=	'\
+			<div id="layerDiv" class="cflayer1" style="top:'+top+'">\
+				<div class="top1">\
+				<a href="#close" onclick="_closeCf(); return false;"><img src="/images/main/btn_close1.png" alt="닫기" class="cbtn1" /></a>\
+				</div>\
+				<div class="movieb1">\
+				<iframe src="https://vimeo.com/showcase/9003896/embed" allowfullscreen frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>\
+				</div>\
+			</div>\
+			'
+	$("#dobox2").append(inHtml);
+	
+}
+</script>
+<link rel="stylesheet" type="text/css" href="../cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+<link rel="stylesheet" type="text/css" href="common/css/slick/slickf085.css?v=20211231071948"/>
+<script type="text/javascript" src="common/js/circle-progress.min.js"></script>
+<script type="text/javascript" src="common/js/slick/slick.js"></script>
+<script type="text/javascript" src="common/js/slick/scripts1.js"></script>
+</head> 
+<body>
+	<div id="spNavi">
+	<h3>메뉴바로가기</h3>
+    <a href="#content">본문 내용으로 바로가기</a> 
+    <a href="#left">메뉴으로 바로가기</a> 
+	</div>
+
+		
+	<div id="header1" style="background-color: #000;">
+		<div style="display: 70%; display: flex; justify-content: center;">
+			<div style="display: flex; align-items: center;">
+				<div>
+					<a href="index.html" style="padding-left: 30px; padding-right: 30px;">
+						<img src="images/common/logo1.png" alt="" class="logo1 chg1" />
+					</a>
+				</div>
+				<div style="display: flex; justify-content: center; align-items: center;">
+					<div style="display: flex;">
+						<div style="font-size: 16px; color: #FFF; padding: 30px">
+							<span>아크로텔 소개</span>
+						</div>
+						<div style="font-size: 16px; color: #FFF; padding: 30px">
+							<span>매물 정보</span>
+						</div>
+						<div style="font-size: 16px; color: #FFF; padding: 30px">
+							<span>고객 서비스</span>
+						</div>
+					</div>
+					<div style="display: flex; justify-content: center; align-items: center;">
+						<div style="width: 150px; height: 54px; background: #FFFFFF 0% 0% no-repeat padding-box;border-radius: 12px; display: flex; justify-content: center; align-items: center; margin-right: 20px; cursor: pointer;">
+							<span style="color: #F68429; font-size: 16px; ;">1566-2020</span>
+						</div>
+						<div style="width: 150px; height: 54px; background: #F68429 0% 0% no-repeat padding-box;border-radius: 12px; display: flex; justify-content: center; align-items: center; cursor: pointer;">
+							<span style="color: #FFFFFF; font-size: 16px; ;">방문 예약하기</span>
+						</div>
+					</div>
+				</div> 
+			</div>
+		</div>
+    </div>
+    
+    	    
+<div id="wrap" class="index1">
+    <div id="mwrap">        
+		
+        <!--메인 비주얼 시작-->
+    	<div class="mainvisual">    
+        	<span class="llnk1">◀</span>
+            <span class="rlnk1">▶</span>
+            <div class="slidectr1">
+            	<div class="chartbox1"></div>
+                <div class="slidernum1"><span></span></div>                                                    
+            </div>
+            <div class="visualbox"> 
+                <div>
+                	<div class="vd1">
+                            <iframe src="https://player.vimeo.com/video/654918731?background=1&amp;quality=1080p&amp;autopause=True&amp;h=0aae0e00fb" style="position:absolute; left:0; top:0; width:100%; height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>                    
+                </div>				
+			</div>
+
+			<div class="pop1">
+            	<a href="#" onclick="_onCf1(); return false;"><img src="images/main/bnn_cf1.png" alt="" /></a>
+            </div>
+        </div>
+        <!--메인 비주얼 끝-->
+        
+        <!--메인 컨텐츠 시작-->
+        <div id="mainCont">
+        	<div class="mncont1" style="height: 1450px !important;">
+            	<div class="mcont1">
+                	<div class="tit1 is-animated ready" data-animation="afadeInDown"  data-duration="fast">
+						<!--<p>NATURE <br />TO FUTURE</p>-->
+						<p class="txt1" style="display: flex; justify-content: center;">BRAND INFORMATION</p>
+                    </div>
+                    <div style="display: flex; flex-direction: column;">
+						<div style="display: flex; justify-content: center;">
+							<!-- <div style="display: flex; width: 70%;">
+								<span style="width: 50%; font-size: 18px; font-weight: bold; color: #001F4D;">DAELIM</span>
+								<span style="width: 50%; text-align: end; font-size: 18px;">대림이 진심으로 짓고</span>
+							</div> -->
+						</div>
+						<div style="display: flex; justify-content: center; align-items: center;">
+							<div style="padding: 30px;">
+								<img style="width: 100%;" src="images/common/main_content/brandinfo1.jpg" alt="">
+							</div>
+							<!-- <div style="padding: 30px; position: relative;">
+								<img style="border-radius: 12px;" src="https://picsum.photos/250/250" alt="임대주택 리츠">
+								<span style="position: absolute; left: 95px; top: 135px; font-size: 20px; color: #FFF;">임대주택 리츠<br>정식 선정기업</span>
+							</div>
+
+							<div style="padding: 30px; position: relative;">
+								<img style="border-radius: 12px;" src="https://picsum.photos/250/250" alt="임대주택 리츠">
+								<span style="position: absolute; left: 120px; top: 130px; font-size: 20px; color: #FFF; text-align: center;">부동산<br>자체개발</span>
+							</div>
+
+							<div style="padding: 30px; position: relative;">
+								<img style="border-radius: 12px;" src="https://picsum.photos/250/250" alt="임대주택 리츠">
+								<span style="position: absolute; left: 120px; top: 130px; font-size: 20px; color: #FFF; text-align: center;">지주<br>공동개발</span>
+							</div> -->
+							
+
+						</div>
+
+						<div style="display: flex; justify-content: center;">
+							<!-- <div style="display: flex; width: 70%;">
+								<span style="width: 50%; font-size: 18px; font-weight: bold; color: #001F4D;">골든핏Cnd</span>
+								<span style="width: 50%; text-align: end; font-size: 18px;">골든핏씨앤디가 철저히 관리합니다.</span>
+							</div> -->
+						</div>
+						<div style="display: flex; justify-content: center; align-items: center;">
+							<div style="padding: 30px;">
+								<img style="width: 100%;" src="images/common/main_content/brandinfo2.jpg" alt="">
+							</div>
+							<!-- <div style="padding: 30px; position: relative;">
+								<img style="border-radius: 12px;" src="https://picsum.photos/250/250" alt="임대주택 리츠">
+								<span style="position: absolute; left: 95px; top: 135px; font-size: 20px; color: #FFF;">임대주택 리츠<br>정신 선정기업</span>
+							</div>
+
+							<div style="padding: 30px; position: relative;">
+								<img style="border-radius: 12px;" src="https://picsum.photos/250/250" alt="임대주택 리츠">
+								<span style="position: absolute; left: 120px; top: 130px; font-size: 20px; color: #FFF; text-align: center;">부동산<br>자체개발</span>
+							</div>
+
+							<div style="padding: 30px; position: relative;">
+								<img style="border-radius: 12px;" src="https://picsum.photos/250/250" alt="임대주택 리츠">
+								<span style="position: absolute; left: 120px; top: 130px; font-size: 20px; color: #FFF; text-align: center;">지주<br>공동개발</span>
+							</div> -->
+							
+
+						</div>
+					</div>
+                </div>
+            </div>
+
+			<div style="margin-top: 100px; margin-bottom: 100px;">
+				<div style="display: flex; flex-direction: column; padding: 30px;">
+					<span style="color: #717171; font-size: 28px;">위치는 어디인가요?</span>
+					<span style="color: #222222; font-size: 28px; text-decoration: underline;">충청남도 천안시 서북구<br>성정두정로82</span>
+				</div>
+
+				<div style="display: flex; flex-direction: column; padding: 30px;">
+					<span style="color: #717171; font-size: 28px;">발주처는 어디인가요?</span>
+					<span style="color: #222222; font-size: 28px; text-decoration: underline;">대한토지신탁주식회사</span>
+				</div>
+
+				<div style="display: flex; flex-direction: column; padding: 30px;">
+					<span style="color: #717171; font-size: 28px;">위치는 어디인가요?</span>
+					<span style="color: #222222; font-size: 28px; text-decoration: underline;">규모는 어떻게 되나요?<br>지하4층, 지상12층</span>
+				</div>
+
+				<div style="display: flex; flex-direction: column; padding: 30px;">
+					<span style="color: #717171; font-size: 28px;">기간은 어떻게 되나요?</span>
+					<span style="color: #222222; font-size: 28px; text-decoration: underline;">2013 ~ 2015</span>
+				</div>
+			</div>
+
+			<div style="display: flex; width: 100%;">
+				<div style="display: flex; width: 50%; padding: 30px; justify-content: end;">
+					<img style="width: 500px;" src="images/common/main_content/location01.png" alt="">
+				</div>
+
+				<div style="display: flex; align-items: center; width: 50%;">
+					<!-- <h1>Incredibly Basic Slider</h1> -->
+					<div id="slider">
+					<a class="control_next">></a>
+					<a class="control_prev"><</a>
+					<ul>
+						<li><img style="width: 100%;" src="images/common/main_content/slider1.png" alt=""></li>
+						<li><img style="width: 100%;" src="images/common/main_content/slider2.png" alt=""></li>
+						<li><img style="width: 100%;" src="images/common/main_content/slider3.png" alt=""></li>
+						<li><img style="width: 100%;" src="images/common/main_content/slider4.png" alt=""></li>
+						<li><img style="width: 100%;" src="images/common/main_content/slider5.png" alt=""></li>
+						<li><img style="width: 100%;" src="images/common/main_content/slider6.png" alt=""></li>
+					</ul>  
+					</div>
+
+					<div class="slider_option">
+					<!-- <input type="checkbox" id="checkbox"> -->
+					<!-- <label for="checkbox">Autoplay Slider</label> -->
+					</div> 
+				</div>
+			</div>
+
+			<div style="padding: 30px; background-color: #F2F2F2;">
+				<img src="images/common/main_content/good100City.jpg" alt="">
+			</div>
+
+			<div style="display: flex; flex-direction: column; padding: 30px; margin-top: 80px; margin-bottom: 80px;">
+				<span style="font-size: 50px; color: #222222; margin-bottom: 30px;">천안의 중심 아크로텔 천안두정<br>INTRODUCE1 - 상가 및 편의시설</span>
+				<img style="width: 100%;" src="images/common/main_content/INTRODUCE1.jpg" alt="">
+			</div>
+
+			<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 30px;">
+				<img style="margin: 40px;" src="images/common/main_content/model01.jpg" alt="">
+				<img style="margin: 40px;" src="images/common/main_content/model02.jpg" alt="">
+				<img style="margin: 40px;" src="images/common/main_content/model03.jpg" alt="">
+				<img style="margin: 40px; width: 50%;" src="images/common/main_content/table01.png" alt="">
+			</div>
+
+			<div style="background-color: #F2F2F2; padding: 50px; display: flex; flex-direction: column;">
+				<span style="font-size: 35px; color: #222222; margin-bottom: 30px;">휴식, 운동, 문화까지 대단지 아파트에서나 누릴 수 있었던<br>맞춤형 커뮤니티시설로 투자자와 입주민의 생활만족도가 올라갑니다.</span>
+				<span style="font-size: 15px; color: #222222;">고급 중식당, 커피전문점, 베이커리 등 다양한 편의시설을<br> 지상 주거시설부터 지하 주차장까지 연결된 엘리베이터로 편하게 이용이 가능합니다.</span>
+				<div style="display: flex;">
+					<div style="width: 60%;">
+						<div id="slider2">
+							<a class="control_next2">></a>
+							<a class="control_prev2"><</a>
+							<ul>
+								<li><img style="width: 100%;" src="images/common/main_content/slider7.png" alt=""></li>
+								<li><img style="width: 100%;" src="images/common/main_content/slider8.png" alt=""></li>
+								<li><img style="width: 100%;" src="images/common/main_content/slider9.png" alt=""></li>
+								<li><img style="width: 100%;" src="images/common/main_content/slider10.png" alt=""></li>
+								<li><img style="width: 100%;" src="images/common/main_content/slider11.png" alt=""></li>
+								<li><img style="width: 100%;" src="images/common/main_content/slider12.png" alt=""></li>
+							</ul>  
+							</div>
+		
+							<div class="slider_option2">
+							<!-- <input type="checkbox" id="checkbox"> -->
+							<!-- <label for="checkbox">Autoplay Slider</label> -->
+							</div> 
+					</div>
+					<div style="width: 40%; display: flex; flex-direction: column; text-align: start; margin-top: 40px; margin-left: 30px;">
+						<span style="color: #222222; font-size: 20px; margin-top: 10px;">주차 시스템</span>
+						<span style="color: #222222; font-size: 35px; margin-top: 10px;">대형 백화점과 같은<br>편안한 주차시스템</span>
+						<span style="color: #222222; font-size: 28px; margin-top: 10px;">CAR-PARKING SYSTEM</span>
+					</div>
+				</div>
+			</div>
+        </div>
+		
+        <!--메인 컨텐츠 끝-->
+    </div>
+</div>
+
+<!--메인 팝업 시작-->
+<script type="text/javascript">
+
+//-->
+</script>
+
+	<style type="text/css">
+    .bottom1{display:none;}
+    </style>
+        
+                    <script type="text/javascript">
+            
+            </script>
+        <!--메인 팝업 끝-->
+
+
+
+<div id="footer" style="background-color: #222222; display: flex; justify-content: center; align-items: center; padding: 30px; padding-bottom: 300px;">
+	<img style="width: 400px;" src="images/common/main_content/footer.png" alt="">
+</div>
+<div style="width: 200px; position: fixed; background-color: #FFF; bottom: 35px; z-index: 100; left: 17%;">
+	<!-- <img style="width: 100%;" src="images/common/main_content/footer_people.png" alt=""> -->
+</div>
+<div class="footer_fixed" style="width: 100%; position: fixed; background-color: #FFF; bottom: 0px; z-index: 100;">
+	<img style="width: 100%;" src="images/common/main_content/footer_img.jpg" alt="">
+</div>
+
+<div  style="width: 200px; height: 300px; position: fixed; background-color: #FFF; bottom: 18%; right: 5%; z-index: 100; border-radius: 15px;">
+	<!-- <h1>Incredibly Basic Slider</h1> -->
+	<div id="slider3" style="width: 100%; height: 100%; margin: 0px !important;">
+	<a class="control_next3">></a>
+	<a class="control_prev3"><</a>
+	<ul>
+		<li><img style="width: 100%; height: 100%;" src="images/common/main_content/footer_people_box1.png" alt=""></li>
+		<li><img style="width: 100%; height: 100%;" src="images/common/main_content/footer_people_box2.png" alt=""></li>
+		<li><img style="width: 100%; height: 100%;" src="images/common/main_content/footer_people_box3.png" alt=""></li>
+		<li><img style="width: 100%; height: 100%;" src="images/common/main_content/footer_people_box4.png" alt=""></li>
+		<li><img style="width: 100%; height: 100%;" src="images/common/main_content/footer_people_box5.png" alt=""></li>
+	</ul>  
+	</div>
+
+	<div onclick="window.scrollTo(0,0);" style="display: flex; justify-content: center; align-content: center; cursor: pointer; background-color: #FFF; width: 100%; height: 40px; border-bottom-right-radius: 15px;  border-bottom-left-radius: 15px;">
+		<span style="line-height: 3;font-size: 15px; font-weight: bold;">↑ TOP</span>
+	</div> 
+</div>
+
+<iframe name="dfile" width="0" height="0" style="display:none;" title="빈프레임"></iframe>
+<script type="text/javascript" src="../wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "ffaa54ca6bab30";
+if(window.wcs) {
+  wcs_do();
+}
+$("#player").css("height","75%")
+</script></body>
+</html>

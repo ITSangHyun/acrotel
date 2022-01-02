@@ -1,0 +1,42 @@
+HTTrack3.49-2+htsswf+htsjava launched on Fri, 31 Dec 2021 19:19:47 at http://acrotel/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar +*[name].https://www.luca831.com//*
+acrotel
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f0#f -F  -%F  -%l "en, *" http://wyndham-gwgs.co.kr/ -O1 "C:\My Web Sites\acrotel" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar +*[name].https://www.luca831.com//* )
+
+
+
+Information, Warnings and Errors reported for this mirror:
+
+note:	the hts-log.txt file, and acrotelmay contain sensitive information,
+acrotelacrotel
+	such as username/password authentication for websites mirrored in this projectacrotelacrotel
+acrotelacrotel
+	do not share these files/folders if you want these information to remain privateacrotelacrotel
+acrotelacrotel
+acrotelacrotel
+acrotelacrotel
+19:19:48	Warning: 	Note: due to wyndham-gwgs.co.kr remote robots.txt rules, links beginning with thesacrotelbidden: /web_admin/ (see in the optionsacrotel
+acrotelacrotel
+19:41:06	Warning: 	Retry after error -4 (Incorrect length (533986 Bytes, 737612 expected)) at link wyndham-gwgs.co.kr/images/main/slide_location3.jpg (from wyndham-gwgs.co.kr/)
+
+19:41:06	Warning: 	Retry after error -4 (Incorrect length (528612 Bytes, 662761 expected)) at link wyndham-gwgs.co.kr/images/main/img1_2.jpg (from wyndham-gwgs.co.kr/)
+
+19:41:24	Warning: 	Retry after error -4 (Incorrect length (511095 Bytes, 721483 expected)) at link wyndham-gwgs.co.kr/images/main/slide_cont2.jpg (from wyndham-gwgs.co.kr/)
+
+19:41:28	Warning: 	Retry after error -4 (Incorrect length (1052574 Bytes, 1227596 expected)) at link wyndham-gwgs.co.kr/common/font/NotoSansKR-Light.woff (from wyndham-gwgs.co.kr/common/css/font.css)
+
+19:41:43	Warning: 	Retry after error -4 (Incorrect length (1062691 Bytes, 1175104 expected)) at link wyndham-gwgs.co.kr/images/sub/visual1_211026.jpg?v=1 (from wyndham-gwgs.co.kr/wyndham/wyndham.php)
+
+19:42:13	Warning: 	Retry after error -4 (Incorrect length (1058045 Bytes, 1164423 expected)) at link wyndham-gwgs.co.kr/images/wyndham/brand1_211125.jpg (from wyndham-gwgs.co.kr/wyndham/brand.php)
+
+19:42:16	Warning: 	Retry after error -4 (Incorrect length (527010 Bytes, 648131 expected)) at link wyndham-gwgs.co.kr/images/location/location1_1_211102.jpg (from wyndham-gwgs.co.kr/location/location.php)
+
+19:42:19	Warning: 	Retry after error -4 (Incorrect length (2102465 Bytes, 2229955 expected)) at link wyndham-gwgs.co.kr/images/unit/special1_211125.jpg (from wyndham-gwgs.co.kr/unit/special.php)
+
+19:42:23	Warning: 	Retry after error -4 (Incorrect length (528335 Bytes, 771287 expected)) at link wyndham-gwgs.co.kr/images/unit/pent.jpg?v=1 (from wyndham-gwgs.co.kr/unit/type.php)
+
+
+
+HTTrack Website Copier/3.49-2 mirror complete in 23 minutes 6 seconds : 171 links scanned, 161 files written (35505062 bytes overall), 162 files updated [33959631 bytes received at 24501 bytes/sec], 3302601 bytes transferred using HTTP compression in 98 files, ratio 49%, 5.2 requests per connection
+
+(No errors, 10 warnings, 0 messages)
+

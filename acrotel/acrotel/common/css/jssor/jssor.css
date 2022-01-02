@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+.slider_main{position:relative; width:1430px; height:870px;  margin:0 auto; z-index:1000; overflow: hidden;}
+.slider_main .slider_box1{position: absolute; left:0; top: 0px; width:1430px; height:870px;  overflow: hidden;}
+
+.slider_main2{position:absolute; left:0; top:210px; width:1100px; height:300px;  margin:0 auto; z-index:1000; overflow: hidden;}
+.slider_main2 .slider_box2{position: absolute; left:0; top:40px; width:1100px; height:260px;  overflow: hidden;}
+
+.slider_sub1{position:relative; width:2000px; height:700px; margin:0 auto; z-index:1000; overflow: hidden;}
+.slider_sub1 .slider_box1{position: absolute; left:0; top: 0px; width:2000px; height:700px; overflow: hidden;}
+
+.slider1-T{display:none;}
+
+/*
+.jssorb01 div           (normal)
+.jssorb01 div:hover     (normal mouseover)
+.jssorb01 .av           (active)
+.jssorb01 .av:hover     (active mouseover)
+.jssorb01 .dn           (mousedown)
+*/
+.jssorb01 div, .jssorb01 div:hover, .jssorb01 .av
+{
+	display:none;
+filter: alpha(opacity=70);
+opacity: .7;
+overflow:hidden;
+cursor: pointer;
+border: #000 1px solid;
+}
+.jssorb01 div { background-color: gray; }
+.jssorb01 div:hover, .jssorb01 .av:hover { background-color: #d3d3d3; }
+.jssorb01 .av { background-color: #fff; }
+.jssorb01 .dn, .jssorb01 .dn:hover { background-color: #555555; }
+
+
+
+/* jssor slider bullet navigator skin 03 css */
+/*
+.jssorb03 div           (normal)
+.jssorb03 div:hover     (normal mouseover)
+.jssorb03 .av           (active)
+.jssorb03 .av:hover     (active mouseover)
+.jssorb03 .dn           (mousedown)
+*/
+.jssorb03 div, .jssorb03 div:hover, .jssorb03 .av
+{
+	background:#000;
+	overflow:hidden;
+	cursor: pointer;
+	width:18px; height:18px;
+}
+.jssorb03 div { background-position:0 0; }
+.jssorb03 div:hover, .jssorb03 .av:hover { background-position:-18px 0; }
+.jssorb03 .av { background-position:-18px 0; }
+.jssorb03 .dn, .jssorb03 .dn:hover { background-position:-18px 0; }
+
+
+ /* jssor slider arrow navigator skin 20 css */
+	/*
+	.jssora20l              (normal)
+	.jssora20r              (normal)
+	.jssora20l:hover        (normal mouseover)
+	.jssora20r:hover        (normal mouseover)
+	.jssora20ldn            (mousedown)
+	.jssora20rdn            (mousedown)
+	*/
+	.jssora20l, .jssora20r, .jssora20ldn, .jssora20rdn
+	{
+		position: absolute;
+		cursor: pointer;
+		display: block;
+		background: url(../../../images/main/btn_arr1.png);
+		overflow:hidden;
+		z-index:20000;
+		width:41px; height:41px;
+		top:630px;
+	}
+	.jssora20l {left:50px; background-position: 0 0; }
+	.jssora20r {left:50px; top:580px; background-position: -41px 0; }
+	.jssora20l:hover {left:50px; background-position: 0 0;}
+	.jssora20r:hover {left:50px; top:580px;background-position: -41px 0; }
+	.jssora20ldn {left:50px;background-position: 0 0; }
+	.jssora20rdn {left:50px; top:580px;background-position: -41px 0; }

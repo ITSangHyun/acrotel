@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="keywords" content=""/>
+<meta name="description" content="드라마틱한 풍광과 럭셔리한 휴식의 만남 - WYNDHAM in GANGWON GOSEONG">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ACROTEL 천안두정">
+<meta property="og:description" content="드라마틱한 풍광과 럭셔리한 휴식의 만남 - WYNDHAM in GANGWON GOSEONG">
+<meta property="og:image" content="404error.html">
+<meta property="og:url" content="index.html">
+
+<!--<link rel="stylesheet" type="text/css" href="/common/css/common.css?v=20211231073449"/>-->
+<link rel="stylesheet" type="text/css" href="common/css/font.css"/>
+<link rel="stylesheet" type="text/css" href="common/css/basef9c9.css?v=20211231073449"/>
+<link rel="stylesheet" type="text/css" href="common/css/layoutf9c9.css?v=20211231073449"/>
+<link rel="stylesheet" type="text/css" href="common/css/contentf9c9.css?v=20211231073449"/>
+<link rel="stylesheet" type="text/css" href="common/css/boardf9c9.css?v=20211231073449"/>
+<script type="text/javascript" src="common/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="common/js/commonf9c9.js?v=20211231073449"></script>
+<script type="text/javascript" src="common/js/script_top3860.js?v=1"></script>
+<meta name="naver-site-verification" content="28291699597803fe9e8d8edf40ea1bf286da22dd" /><!--모바일 체크 자바스크립트버전-->
+<script type="text/javascript">
+if (navigator.userAgent.match(/iPhone|iPod|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != null
+|| navigator.userAgent.match(/LG|SAMSUNG|Samsung/) != null)
+{
+	//html = "<meta http-equiv='refresh' content='0;url=/m'>";
+	//$("head").append(html);
+	//location.href = '/m';
+}
+</script>
+<!--모바일 체크 자바스크립트버전-->
+
+<title>윈덤 강원 고성</title>
+
+<script type="text/javascript">
+var windowHeight = 0;
+$(document).ready(function() {
+	//bnn_balloon1();
+	//bnn_balloon1();
+	//ctrl_embed('play');
+
+	var windowHeight = 0;
+	$window = $(window);
+	var addHeight = 80;    
+		
+	$window.on('resize', function() {	_objectPositionTop();	});
+	$window.on('scroll', function() { _objectPositionChk(addHeight) });
+	$window.on('load', function() { _objectPositionChk(addHeight) });
+	_objectPositionTop();
+	//_onCf1();
+	
+	$(".pop1").find("img").each(function(index){
+		$(this).css({"opacity":"0","margin-bottom":parseInt($(this).css("margin-bottom"))-20});
+	});
+	
+	setTimeout(function(){
+		$(".pop1").find("img").each(function(index){
+			$(this).delay(100*index).animate({opacity:"1", marginBottom: parseInt($(this).css("margin-bottom"))+20  }, {
+				duration : 800
+				}
+			); 
+		})
+	},100)
+});	
+
+function _objectPositionTop() {
+	windowHeight = $window.height();
+	$('.is-animated').each(function() { 	$(this).data('offsetTop', ($(this).offset().top));	});
+}	
+
+function _objectPositionChk(addHeight){
+	var position = $window.scrollTop() + windowHeight - addHeight;	
+	$('.is-animated.ready').each(function() {		
+		if(!$(this).hasClass('active') && $(this).data('offsetTop') < position) {	
+		_isAnimate($(this));	
+		$(this).find(".is-animated.ready").each(function(index, element) {
+            _isAnimate($(element));
+        });			
+	}
+	});
+}
+
+function _isAnimate(obj) {
+	$(obj).addClass('animate__animated ' + $(obj).data('animation') + ' animate__delay-'+$(obj).data('delay') + ' animate__'+$(obj).data('duration') + ' active');
+	//console.log($(obj).attr("class"));
+	$(obj).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+		$(obj).removeClass('animated ' + $(obj).data('animation') + " ready");
+		//console.log('animated ' + el.data('animation'));
+	});
+}	
+
+//유튜브 영상
+function _onCf1(){
+	var top = Number($(window).scrollTop())+60+'px';
+	divFilter($(document.body), "dobox3", "A", 850, "dobox2");
+	inHtml	=	'\
+			<div id="layerDiv" class="cflayer1" style="top:'+top+'">\
+				<div class="top1">\
+				<a href="#close" onclick="$(\'#layerDiv\').remove();$(\'#dobox3\').remove(); return false;"><img src="/images/main/btn_close1.png" alt="닫기" class="cbtn1" /></a>\
+				</div>\
+				<div class="movieb1">\
+				<iframe src="https://www.youtube.com/embed/BEKMFJA_4pY?rel=0&autoplay=1&mute=1&showinfo=0&loop=1&time_continue=0" width="100%" height="100%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>\
+				</div>\
+			</div>\
+			'
+	$("#dobox3").append(inHtml);
+	
+}
+
+
+//최종 영상 안씀
+/*
+function _onCf1(){
+	var top = Number($(window).scrollTop())+60+'px';
+	divFilter($(document.body), "dobox3", "A", 850, "dobox2");
+	inHtml	=	'\
+			<div id="layerDiv" class="cflayer1" style="top:'+top+'">\
+				<div class="top1">\
+				<a href="#close" onclick="$(\'#layerDiv\').remove();$(\'#dobox3\').remove(); return false;"><img src="/images/main/btn_close1.png" alt="닫기" class="cbtn1" /></a>\
+				</div>\
+				<div class="movieb1">\
+				<iframe  src="https://player.vimeo.com/video/654001325?title=0&byline=0&portrait=0&autoplay=1&quality=1080p&h=654001325" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen"></iframe>\
+				</div>\
+			</div>\
+			'
+	$("#dobox3").append(inHtml);
+	
+}
+*/
+
+//쇼케이스 안씀
+function _onCf(){
+	var top = Number($(window).scrollTop())+60+'px';
+	divFilter($(document.body), "dobox1", "A", 850);
+	inHtml	=	'\
+			<div id="layerDiv" class="cflayer1" style="top:'+top+'">\
+				<div class="top1">\
+				<a href="#close" onclick="_closeCf(); return false;"><img src="/images/main/btn_close1.png" alt="닫기" class="cbtn1" /></a>\
+				</div>\
+				<div class="movieb1">\
+				<iframe src="https://vimeo.com/showcase/9003896/embed" allowfullscreen frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>\
+				</div>\
+			</div>\
+			'
+	$("#dobox2").append(inHtml);
+	
+}
+</script>
+<link rel="stylesheet" type="text/css" href="../cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+<link rel="stylesheet" type="text/css" href="common/css/slick/slickf9c9.css?v=20211231073449"/>
+<script type="text/javascript" src="common/js/circle-progress.min.js"></script>
+<script type="text/javascript" src="common/js/slick/slick.js"></script>
+<script type="text/javascript" src="common/js/slick/scripts1.js"></script>
+</head> 
+<body>
+	<div id="spNavi">
+	<h3>메뉴바로가기</h3>
+    <a href="#content">본문 내용으로 바로가기</a> 
+    <a href="#left">메뉴으로 바로가기</a> 
+	</div>
+
+		
+	<div id="header">
+    	
+    	<div id="menu-Area">
+        	<div class="gnbbox1">
+            			</div>
+        	<div id="menu-box">
+            	<div class="bgdepth1">                
+                    <a href="index.html"><img src="images/common/logo1.png" alt="" class="logo1 chg1" /></a>
+                        
+                    <div class="mmnbtn1">
+                        <div class="btn trigger"><span class="line"></span></div>
+                    </div>
+                    <div class="topmenu">                                        	                        
+                        <ul class="menudep1">  
+                        	<li class="mmenu0"><a href="index.html" class="mnlnk1">HOME</a></li>
+                                                        <li class="mmenu0"><a href="wyndham/wyndham.html" class="mnlnk1 ">WYNDHAM</a>
+                            	                                
+                            	<ul class="submn0">
+                                                                	<li><a href="wyndham/wyndham.html">WYNDHAM</a></li> 
+                                                                	<li><a href="wyndham/brand.html">BRAND</a></li> 
+                                                                </ul>
+                                                            </li>    
+                                                        <li class="mmenu0"><a href="info/overview.html" class="mnlnk1 ">SUMMARY</a>
+                            	                                
+                            	<ul class="submn0">
+                                                                	<li><a href="info/overview.html">OVERVIEW</a></li> 
+                                                                	<li><a href="direction/direction.html">DIRECTIONS</a></li> 
+                                                                </ul>
+                                                            </li>    
+                                                        <li class="mmenu0"><a href="premium/premium.html" class="mnlnk1 ">PREMIUM</a>
+                            	                                
+                            	<ul class="submn0">
+                                                                	<li><a href="premium/premium.html">PREMIUM</a></li> 
+                                                                	<li><a href="location/location.html">LOCATION</a></li> 
+                                                                </ul>
+                                                            </li>    
+                                                        <li class="mmenu0"><a href="unit/plan.html" class="mnlnk1 ">UNIT</a>
+                            	                                
+                            	<ul class="submn0">
+                                                                	<li><a href="unit/plan.html">PLAN</a></li> 
+                                                                	<li><a href="unit/special.html">SPECIAL</a></li> 
+                                                                	<li><a href="unit/community.html">COMMUNITY</a></li> 
+                                                                	<li><a href="unit/type.html">TYPE</a></li> 
+                                                                </ul>
+                                                            </li>    
+                                                        <li class="mmenu0"><a href="register/client.html" class="mnlnk1 ">REGISTER</a>
+                            	                                
+                            	<ul class="submn0">
+                                                                	<li><a href="register/client.html">REGISTER</a></li> 
+                                                                	<li><a href="reserve/visit.html" onclick="return _alert('준비중입니다.');">RESERVATION</a></li> 
+                                                                	<li><a href="register/media.html">MEDIA</a></li> 
+                                                                	<li><a href="register/news.html">NEWS</a></li> 
+                                                                </ul>
+                                                            </li>    
+                                                 
+                        </ul>                                                                     
+                    </div>       
+                    <div class="mnbnn1">
+                        <img src="images/common/top_tel1.png" alt="" class="chg1" />
+                        <a href="register/client.html" class="mL20"><img src="images/common/btn_client1.png" alt="" /></a>
+                    </div>             
+                </div>                
+			</div>                                               
+        </div>   
+    </div>
+    
+    	    
+<div id="wrap" class="index1">
+    <div id="mwrap">        
+		
+        <!--메인 비주얼 시작-->
+    	<div class="mainvisual">    
+        	<span class="llnk1">◀</span>
+            <span class="rlnk1">▶</span>
+            <div class="slidectr1">
+            	<div class="chartbox1"></div>
+                <div class="slidernum1"><span></span></div>                                                    
+            </div>
+            <div class="visualbox"> 
+                <div>
+                	<div class="vd1">
+                            <iframe src="https://player.vimeo.com/video/654918731?background=1&amp;quality=1080p&amp;autopause=True&amp;h=0aae0e00fb" style="position:absolute; left:0; top:0; width:100%; height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>                    
+                </div>				
+			</div>
+
+			<div class="pop1">
+            	<a href="#" onclick="_onCf1(); return false;"><img src="images/main/bnn_cf1.png" alt="" /></a>
+            </div>
+        </div>
+        <!--메인 비주얼 끝-->
+        
+        <!--메인 컨텐츠 시작-->
+        <div id="mainCont">
+        	<div class="mncont1">
+            	<div class="mcont1">
+                	<div class="tit1 is-animated ready" data-animation="afadeInDown"  data-duration="fast">
+                    	WYNDHAM IN GOSEONG GANGWON
+						<!--<p>NATURE <br />TO FUTURE</p>-->
+						<p class="txt1">윈덤이 선택한 바다,</br>당신이 주인입니다</p>
+                        <a href="location/location.html">View more  +</a>
+                    </div>
+                    
+                    <div class="locationtxt1 is-animated ready" data-animation="afadeInDown"  data-duration="fast">
+                    	<div>
+                        	<div class="txt1">
+                            	<p>광역교통망으로 더 빠르게</p>                                
+                                동서고속화철도 KTX연결(예정)으로 용산-속초 약 1시간,<br />
+                                인천공항-속초 약 1시간 30분 연결, 서울-양양 고속도로 개통, 속초항 크루즈, 양양공항 등 교통 확충
+                            </div>
+                            <div class="txt2">
+                            	FAST <em>TRAFFIC</em>
+                            	<span>01</span>
+                            </div>
+                        </div>
+                        <div>
+                        	<div class="txt1">
+                            	<p>동해의 낭만을 더 가깝게</p>                                
+                                도보 2분 거리에 위치한 봉포해수욕장 프리미엄과<br />
+								설악산 국립공원 및 천진해수욕장, 파인리즈 골프 CC 등 자유롭고 다채로운 관광지 연계
+                            </div>
+                            <div class="txt2">
+                            	MULTIPLE <em>INFRA</em>
+                            	<span>01</span>
+                            </div>
+                        </div>
+                        <div>
+                        	<div class="txt1">
+                            	<p>관광수요로 더 든든하게</p>                                
+                                코로나 쇼크 없는 고성 관광수요 증가(고성 2021년 여름 관광객 2.010% 증가)와 <br />
+								연 2천만 명의 관광수요를 누리는 동해안 프리미엄
+                            </div>
+                            <div class="txt2">
+                            	SPECIAL <em>DEMAND</em>
+                            	<span>01</span>
+                            </div>
+                        </div>
+                        <div>
+                        	<div class="txt1">
+                            	<p>전 객실 오션뷰로 더 상쾌하게</p>                                
+                                489개 전 객실 바다조망 특화설계 및 일부타입 오션+마운틴(설악산)의 더블뷰와 <br />
+								인피니티풀, 스카이라운지 등 커뮤니티시설로 상품성 강화
+                            </div>
+                            <div class="txt2">
+                            	REFRESH <em>HOUSING</em>
+                            	<span>01</span>
+                            </div>
+                        </div>
+                        <div>
+                        	<div class="txt1">
+                            	<p>세계적 브랜드로 더 품격있게</p>                                
+                                80개국 20개 브랜드, 9천 2백여 개 규모의 세계적인 호텔 체인 윈덤그룹의 <br />
+								고성·속초 최초 5성급 호텔 공급 및 국내 최초 윈덤호텔 위탁 운영
+                            </div>
+                            <div class="txt2">
+                            	GLOBAL <em>BRAND</em>
+                            	<span>01</span>
+                            </div>
+                        </div>
+                        <div>
+                        	<div class="txt1">
+                            	<p>투자특권으로 더 가치 높게</p>                                
+                                윈덤 오너십과 수익성을 겸비한 하이브리드형 상품으로 청약자격<em>無</em>, 전매<em>無</em>제한,<br />
+								주택수 미포함 및 생활형 숙박시설 분양금지 법안으로 희소성 높은 투자가치
+                            </div>
+<!--
+                            <div class="txt1">
+                            	<p>투자특권으로 더 가치 높게</p>                                
+                                주거성과 수익성을 겸비한 하이브리드형 상품으로 청약자격無, 전매 無제한, <br />
+								주택수 미포함 및 생활형 숙박시설 분양 금지 법안으로 희소성 높은 투자가치
+                            </div>
+-->
+                            <div class="txt2">
+                            	DIFFERENT <em>INVEST</em>
+                            	<span>01</span>
+                            </div>
+                        </div>
+                        <div>
+                        	<div class="txt1">
+                            	<p>원덤 멤버십으로 더 자유롭게</p>                                
+                               계약자 대상 무상가입(일부 제외) 윈덤 데스티네이션 제휴 및 포인트 리워드 시스템으로<br />
+								전 세계 9.5만 개 호텔 이용, 20년 멤버십 종료 후 가입비+운영수익금 반환, 양도 가능
+                            </div>
+<!--
+                            <div class="txt1">
+                            	<p>윈덤 멤버십으로 더 자유롭게</p>                                
+                                '윈덤 강원 고성' 계약자 대상 무상가입(일부 제외), 포인트 리워드 시스템으로<br />
+								전 세계 9.5만개 호텔 이용, 20년 멤버십 종료 후 가입비+운영수익금 반환, 양도 가능
+                            </div>
+-->
+                            <div class="txt2">
+                            	WYNDHAM <em>MEMBERSHIP</em>
+                            	<span>01</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mslide1 is-animated ready" data-animation="afadeInMove3"  data-duration="fast">
+                    	<div>
+                        	<img src="images/main/slide_location1.jpg" alt="" />
+                        </div>
+                        <div>
+                        	<img src="images/main/slide_location2.jpg" alt="" />
+                        </div>
+                        <div>
+                        	<img src="images/main/slide_location3.jpg" alt="" />
+                        </div>
+                        <div>
+                        	<img src="images/main/slide_location4.jpg" alt="" />
+                        </div>
+                        <div>
+                        	<img src="images/main/slide_location5.jpg" alt="" />
+                        </div>
+                        <div>
+                        	<img src="images/main/slide_location6.jpg" alt="" />
+                        </div>
+                        <div>
+                        	<img src="images/main/slide_location7.jpg" alt="" />
+                        </div>
+                    </div>
+                                        
+                    <div class="slidectr1">
+                        <div class="chartbox2"></div>
+                        <div class="lslidernum1"><span></span></div>                                                    
+                        <span class="lllnk1">◀</span>
+                    	<span class="lrlnk1">▶</span>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="mncont2">
+            	<div class="mcont1">
+                	<ul>
+                    	<li class="is-animated ready" data-animation="afadeInMove1"  data-duration="fast">
+                        	<div class="img1"><img src="images/main/img1_1_211019.jpg" alt="" /></div>
+                            <div class="txt2">
+                            	호텔의 품격을 넘어 파격으로
+                                <em>윈덤이라는 이름을</br>나만의 자부심으로</em>
+                                <p>
+                                	동해의 프리미엄과 </br>
+                                	윈덤의 프라이드를 모두 갖춘</br>
+                                	윈덤 강원 고성이 찾아옵니다
+                                </p>
+                            </div>
+							<!--<div class="txt1">
+                            	동해안의 프리미엄을 담은
+                                <em>예술적 오션<br />세계적 윈덤</em>
+                                <p>
+                                	세계가 주목하는<br />강원도 동해안 관광거점의 정점
+                                </p>
+                            </div>-->
+                        </li>
+                        
+                        <li class="is-animated ready" data-animation="afadeInMove2"  data-duration="fast">
+                        	<div class="img1"><img src="images/main/img1_2.jpg" alt="" /></div>
+                            <div class="txt1">
+                            	<em>WYNDHAM</em>
+                                in GOSEONG GANGWON
+                            </div>
+                        </li>
+                        <li class="is-animated ready" data-animation="afadeInMove3"  data-duration="fast">
+                        	<div class="img1"><img src="images/main/img1_3.jpg" alt="" /></div>
+                        </li>
+                    </ul>
+                </div>
+			</div>
+            
+            <div class="mncont3">
+            	<div class="mcont1 is-animated ready" data-animation="afadeInDown"  data-duration="fast">
+                	<div class="slidectr1">
+                        <div class="chartbox3"></div>
+                        <div class="cslidernum1"><span></span></div>                                                    
+                        <span class="lllnk2">◀</span>
+                    	<span class="lrlnk2">▶</span>
+                    </div>
+                    <a href="wyndham/wyndham.html" class="lnk1">View more  +</a>
+                	<div class="mslide2">
+                    	<div>
+                        	<div class="slidetxt1">
+                                <div class="txt1">
+                                    윈덤 호텔 &amp; 리조트
+                                    <p>
+                                    	<em>WYNDHAM</em>HOTELS &amp; RESORTS
+                                    </p>
+                                </div>
+                                <div class="txt2">
+                                    윈덤 호텔 &amp; 리조트(NYSE: WH)는 세계 최대 호텔 프랜차이즈 기업으로<br />
+                                    6개 대륙, 80개국에 걸쳐 9천 개 이상의 호텔과 제휴하고 있습니다.<br />
+                                    일상 여행객들에게 79만 6천 개 이상의 객실을 제공하는<br />
+                                    네트워크를 통해 윈덤은 호텔 업계에서 이코노미 및<br />
+                                    미드스케일 분야 모두에서 선두를 차지하고 있습니다.
+                                </div>
+                            </div>
+                        	<img src="images/main/slide_cont1.jpg" alt="" />                            
+                        </div>
+                        
+                        <div>
+                        	<div class="slidetxt1">
+                                <div class="txt1">
+                                    윈덤 리워드
+                                    <p>
+                                    	<em>WYNDHAM</em>REWARDS
+                                    </p>
+                                </div>
+                                <div class="txt2">
+                                    USA 투데이(USA TODAY) 독자가 뽑은 최고의 호텔 리워드<br />
+                                    프로그램으로 선정된 윈덤 리워드(WYNDHAM REWARDS)는<br />
+                                    전 세계 9.5만 개 이상의 호텔, 클럽 리조트,<br />
+                                    숙박 대여시설에서 사용할 수 있으며<br />
+                                    가장 풍성한 혜택을 자랑하는 호텔 리워드 프로그램입니다.
+                                </div>
+                            </div>
+                        	<img src="images/main/slide_cont2.jpg" alt="" />                            
+                        </div>
+                    </div>
+                </div>
+			</div>
+           
+        </div>
+        <!--메인 컨텐츠 끝-->
+    </div>
+</div>
+
+<!--메인 팝업 시작-->
+<script type="text/javascript">
+<!--
+function close_popup_layer(idx,mode) {
+	if(mode == "today") { setCookie("isPopup" + idx, "y", 1); }
+	document.getElementById("popup" + idx).style.display = "none";
+	if ($(".popuplayer").length > 0){
+		if ($(".popuplayer:visible").length < 1){			
+			$("#dobox1").remove();
+			_htmlBodyFixed();
+		}
+	}
+}
+//-->
+</script>
+
+	<style type="text/css">
+    .bottom1{display:none;}
+    </style>
+        <div class="popuplayer" id="popup9" style="position:absolute;top:130px;right:50%; margin-right:-380px;display:none;z-index:201;">
+            <!--<a href="" onclick="close_popup_layer('9','normal'); return false;"><img src="/images/common/btn/btn_close3.png" alt="" style="position:absolute; right:0; top:0; border:none;" /></a>-->
+            <div style="width:762px; height:555px; overflow:hidden;">
+            <div style='float:left; width:380px; height:555px;'><div class='sdcont1'><img src='upload_design/popup/1638781527_popup_image' alt='클린분양홍보관' width='380' height='555' /></div><p class='bottom1'>클린분양홍보관</p></div><div style='float:left; width:380px; height:555px;'><div class='sdcont1'><img src='upload_design/popup/1638407753_popup_image' alt='오픈' width='380' height='555' /></div><p class='bottom1'>오픈</p></div>            </div>
+            <p style="background:#F7F7F7; text-align:left; text-indent:2px; padding:8px;">
+                <input type="checkbox" onClick="close_popup_layer('9','today')" /> 오늘 하루 이창 열지 않음
+                <input type="button" value="X" onClick="close_popup_layer('9','normal')" style="float:right; width:30px; border:none; font-size:16px; background:none;" />
+            </p>
+            
+        </div>
+                    <script type="text/javascript">
+            <!--
+                document.getElementById("popup9").style.display = "block";
+                if ($("#dobox1").length < 1){
+					_htmlBodyFixed();
+                    divFilter($(document.body), "dobox1", "A", 850);
+                    $("#dobox1").bind({		
+                        click:function(){close_popup_layer('9','normal');},
+                        touchstart: function(){close_popup_layer('9','normal');}
+                    });	
+                }								
+            //-->
+            </script>
+        <!--메인 팝업 끝-->
+
+<div id="footer">
+	<div class="fcont">
+    	<img src="images/common/footer_logo13860.png?v=1" alt="" class=""/>
+       	<div class="copy1">
+        	사업지 주소 : 강원도 고성군 토성면 봉포리 258-9 외 8필지  |  분양홍보관 : 서울특별시 강남구 자곡동 666  |  시행 : (주)리드온산업개발<br />
+			COPYRIGHT 2021 (C) 윈덤 강원 고성. ALL RIGHTS RESERVED.
+           <div class="partner mT30">
+               <img src="images/common/footer_partner1.png" alt="">
+           </div>
+            <p class="txt1 mT30">
+            ※ 본 홈페이지에 사용된 CG 및 이미지, 문안 등은 소비자의 이해를 돕기 위해 제작된 것으로 실제와 차이가 있을 수 있으며, 건물의 색채 및 외부 상세 내역 등은 인·허가, 심의 및 법규의 변경 등으로 인하여 실제 시공시 변경될 수 있습니다.<br />
+			※ 본 홈페이지의 제작 과정상 오탈자가 있을 수 있으므로 계약시 반드시 확인하시기 바랍니다.
+            </p>
+        </div>
+    	<div class="coop">         	
+        	<img src="images/common/footer_tel1.png" alt="" class="" />
+        </div>  
+    </div>
+</div>
+<iframe name="dfile" width="0" height="0" style="display:none;" title="빈프레임"></iframe>
+<script type="text/javascript" src="../wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "ffaa54ca6bab30";
+if(window.wcs) {
+  wcs_do();
+}
+</script></body>
+</html>
